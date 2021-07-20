@@ -44,6 +44,50 @@
      #link-border{
         border: white 2px solid;border-radius: 10px 0 10px 0;background-color: white;color: #007d99;font-weight: bolder;
      }
+     .list-group-item {
+    border: none;
+  
+}
+.list-group-item-action {
+
+    color: #009999;
+    text-align: center;
+   
+   
+    
+}
+.list-group-item.active {
+   
+    background-color: #008a99;
+    border-color: #008a99;
+}
+.border {
+    border: 3px solid  #008a99!important;
+    border-radius: 2px;
+}
+
+    .container{
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: 1px solid white;
+      font-weight: bolder;
+
+    }
+    .form-group span{
+      color: red;
+    }
+    .form-control {
+      border: 1px solid #009999;
+      
+    }
+    h2{
+      color: #007d99;
+      text-align: center;
+    }
+    .btn{
+     
+      font-weight: bolder;
+
+    }
 
     
   </style>
@@ -86,7 +130,105 @@
 
 </div>
    
+<div style="padding-top: 155px;" class="px-3 ">
+  
+  <div class="row">
+    <div class="container py-3">
+      <form action="" id="regForm" method="post">
 
+
+
+  <div class=" tab">
+    <h2>User Details</h2>
+   <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
+   <div class="form-group row">
+    <label for="nameinput" class="col-sm-12 col-lg-3  col-form-label-lg pl-xl-5">Name <span> *</span></label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="nameinput" title="required field">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="contactinput" class="col-sm-12 col-lg-3  col-form-label-lg  pl-xl-5">Contact No<span> *</span></label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="contactinput" title="required field" required>
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="emailinput" class="col-sm-12 col-lg-3  col-form-label-lg pl-xl-5">Email<span> *</span></label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="email" class="form-control form-control-lg" id="emailinput" title="required field" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="orginput" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Organization<span> *</span></label>
+    <div class="col-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="orginput" title="required field" required>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="deptinput" class="col-sm-12 col-lg-3  col-form-label-lg  pl-xl-5">Department</label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="deptinput" >
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="addrinput" class="col-sm-12 col-lg-3 col-form-label-lg  pl-xl-5">Address</label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="addrinput" >
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="custcodeinput" class="col-sm-12 col-lg-3 col-form-label-lg  pl-xl-5">Customer Code</label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="custcodeinput" >
+    </div>
+  </div>
+  </div>
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  <div class="d-flex justify-content-end">
+    <button type="button" id="prevBtn"  class="btn btn-success mr-2" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" id="nextBtn"  class="btn btn-success " onclick="nextPrev(1)">Next</button>
+    </div>
+ 
+
+
+
+
+ 
+
+
+
+
+
+  
+
+
+
+
+     </form>
+      </div>
+     
+    
+  </div>
+
+ </div>
+ 
 
     
    
