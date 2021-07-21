@@ -76,10 +76,10 @@
       color: red;
     }
     .form-control {
-      border: 1px solid #009999;
+      border: 1.5px solid #009999;
       
     }
-    h2{
+    h1{
       color: #007d99;
       text-align: center;
     }
@@ -89,6 +89,14 @@
 
     }
 
+    ::placeholder{
+    color: #85c8cf !important;
+   
+    opacity: 1;
+  }
+    .addldetails{
+    text-align: center;
+  }
     
   </style>
 </head>
@@ -138,13 +146,13 @@
 
 
 
-  <div class=" tab">
-    <h2>User Details</h2>
+  <div class=" tab px-2">
+    <h1>User Details</h1>
    <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
    <div class="form-group row">
     <label for="nameinput" class="col-sm-12 col-lg-3  col-form-label-lg pl-xl-5">Name <span> *</span></label>
     <div class="col-sm-12 col-lg-9">
-      <input type="text" class="form-control form-control-lg" id="nameinput" title="required field">
+      <input type="text" class="form-control form-control-lg" id="nameinput" title="required field"  required>
     </div>
   </div>
 
@@ -186,9 +194,54 @@
       <input type="text" class="form-control form-control-lg" id="custcodeinput" >
     </div>
   </div>
+  </div> 
+
+
+  <div class=" tab px-2">
+    <h1>Product Details</h1>
+   <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
+   <div class="form-group row">
+    <label for="prodname" class="col-sm-12 col-lg-3  col-form-label-lg pl-xl-5">Product Name <span> *</span></label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="prodname" title="required field" required>
+    </div>
   </div>
 
+  <div class="form-group row">
+    <label for="prodtype" class="col-sm-12 col-lg-3  col-form-label-lg  pl-xl-5">Type References / MLFBs<span> *</span></label>
+    <div class="col-sm-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="prodtype" title="required field" required>
+    </div>
+  </div>
+  
+ 
+  <div class="form-group row">
+    <label for="manufacturer" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Manufacturer<span> *</span></label>
+    <div class="col-12 col-lg-9">
+      <input type="text" class="form-control form-control-lg" id="manufacturer" title="required field" required>
+    </div>
+  </div>
 
+  <div class="form-group row addldetails">
+    <label for="manufacturer" class="col-12  col-form-label-lg  pl-xl-5">Do you want to fill additional Product Technical Details?<span> *</span></label>
+   
+      <div class="form-check col-12">
+        <input class="form-check-input" type="radio" name="chkaddl" id="chkYes" required>
+        <label class="form-check-label mr-5" for="exampleRadios2">
+          Yes
+        </label>
+        <input class="form-check-input" type="radio" name="chkaddl" id="chkNo" required >
+        <label class="form-check-label" for="exampleRadios2">
+          No
+        </label>
+      </div>
+    
+  </div>
+
+ 
+
+
+  </div>
 
 
   
@@ -202,7 +255,7 @@
 
 
   <div class="d-flex justify-content-end">
-    <button type="button" id="prevBtn"  class="btn btn-success mr-2" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" id="prevBtn"  class="btn btn-success mr-2" onclick="nextPrev(-1) ">Previous</button>
     <button type="button" id="nextBtn"  class="btn btn-success " onclick="nextPrev(1)">Next</button>
     </div>
  
@@ -210,7 +263,7 @@
 
 
 
- 
+  
 
 
 
@@ -230,9 +283,7 @@
  </div>
  
 
-    
-   
-   
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
