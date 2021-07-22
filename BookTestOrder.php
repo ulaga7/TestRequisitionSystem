@@ -407,7 +407,44 @@
 
   </div>
 
-
+  <div class="tab">
+    <h1 >Other Details</h1>
+    <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
+    <div class="form-group row">
+      <label for="standard" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Applicable Standard<span> *</span></label>
+      <div class="col-12 col-lg-9">
+        <select class="form-control form-control-lg" id="standard" name="standard" title="required field" onchange='checkstd(this.value);' required>
+          <option value="dummy">Select one</option>
+          <option value="IEC 60947-1">IEC 60947-1</option>
+          <option value="IS/IEC 60947-1">IS/IEC 60947-1</option>
+          <option value="IEC 60947-2">IEC 60947-2</option>
+          <option value="IS/IEC 60947-2">IS/IEC 60947-2</option>
+          <option value="IEC 60947-3">IEC 60947-3</option>
+          <option value="IEC 60947-4-1">IEC 60947-4-1</option>
+          <option value="IS/IEC 60947-4-1">IS/IEC 60947-4-1</option>
+          <option value="IEC 60947-5-1">IEC 60947-5-1</option>
+          <option value="IS/IEC 60947-5-1">IS/IEC 60947-5-1</option>
+          <option value="IEC 60898-1">IEC 60898-1</option>
+          <option value="IS/IEC: 60898-1">IS/IEC: 60898-1</option>
+          <option value="IEC 60077-2">IEC 60077-2</option>
+          <option value="IEC 61008-1">IEC 61008-1</option>
+          <option value="IEC 61009-1">IEC 61009-1</option>
+          <option value="IS 12640-1">IS 12640-1</option>
+          <option value="IS 12640-2">IS 12640-2</option>
+          <option value="">any other</option>
+        </select>
+      </div>
+    </div>
+   
+    <div class="form-group row">
+      <label for="tests" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Fill required tests</label>
+      <div class="col-12 col-lg-9">
+        <textarea class="form-control" id="tests" rows="3" maxlength="300"></textarea>
+      </div>
+    </div>
+  
+  
+  </div>
  
 
 
