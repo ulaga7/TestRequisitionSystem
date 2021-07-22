@@ -120,6 +120,26 @@ color: red!important;
   border:2px solid red;
 }
  
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #009999;
+  }
     
   </style>
 </head>
@@ -533,6 +553,16 @@ color: red!important;
 
 
 
+    <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    </div>
+
+
+
   
    
   
@@ -610,6 +640,8 @@ color: red!important;
             document.getElementById("nextBtn").innerHTML = "Next";
             document.getElementById("nextBtn").classList.replace("btn-danger","btn-success");
           }
+           //... and run a function that will display the correct step indicator:
+           fixStepIndicator(n)
         }
 
         function nextPrev(n) {
@@ -686,10 +718,24 @@ color: red!important;
               y[i].classList.remove("invalid","holder");
             }
           }
+           // If the valid status is true, mark the step as finished and valid:
+           if (valid) {
+            document.getElementsByClassName("step")[currentTab].className += " finish";
+           
+          }
          
            
           
           return valid; // return the valid status
+        }
+        function fixStepIndicator(n) {
+          // This function removes the "active" class of all steps...
+          var i, x = document.getElementsByClassName("step");
+          for (i = 0; i < x.length; i++) {
+            x[i].className = x[i].className.replace(" active", "");
+          }
+          //... and adds the "active" class on the current step:
+          x[n].className += " active";
         }
         
 
