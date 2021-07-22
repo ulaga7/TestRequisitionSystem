@@ -482,6 +482,28 @@
   
   </div>
 
+  <div class="tab">
+    <h1 >Terms & Conditions</h1>
+    <p >1. All customer information kept confidential unless required by law, regulators or authorized by contractual agreement.</p>
+    <p>2. Samples are accepted with proper name plate only.	</p>
+    <p>3. If any additional test required, kindly mention before authorizing final test requisition form.</p>
+    <p>4. Testing of samples will be initiated after submission of authorized test requisition form & advance payment (in case of other than Siemens customers).</p>
+    <p>5. Measurement uncertainty will be considered for decision rule at approximately confidence level of 95%.</p>
+    <p>6. We provide the undertaking that the above-mentioned samples are manufactured by us and if not the NOC from the manufacturer will be submitted along with authorized test request.</p>
+    <p>7. Type Test Center Siemens Limited Kalwa will take all possible care in handling the test samples, but the risk of damages in transit or during testing rests with the customer.</p>
+    <p>8. Type Test Center Siemens Limited Kalwa will not be responsible for any damage to the samples during loading, unloading, shifting and testing or due to acts of God like fire, accidents, storms, earthquakes etc.</p>
+    <p>9. Type Test Center Siemens Limited Kalwa will not be responsible if a test must be postponed because of non-availability of power, malfunctioning of the equipment etc.</p>
+    <p>10. In case of any dispute, the decision of CEO of Type Test Center Siemens Limited Kalwa shall be final.</p>
+    <p>11. Tested samples must be removed from Type Test Center Siemens Limited Kalwa premises within 30 days from date of issue of test report. In case of samples are not removed within 30 days, applicable demurrage will be charged for next 30 days and thereafter sample will be disposed off.</p>                  
+  
+    <div class="form-group form-check d-flex justify-content-around">
+     
+      <label class="form-check-label text-dark" for="terms"> <input type="checkbox" class="form-check-input" id="terms">
+        I agree to the terms and conditions</label>
+    </div>
+  </div>
+  
+
 
 
 
