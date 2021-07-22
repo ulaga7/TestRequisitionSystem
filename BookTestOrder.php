@@ -97,6 +97,12 @@
     .addldetails{
     text-align: center;
   }
+  #additionaldetails{
+    display: none;
+  }
+
+
+ 
     
   </style>
 </head>
@@ -142,7 +148,7 @@
   
   <div class="row">
     <div class="container py-3">
-      <form action="" id="regForm" method="post">
+      <form action="testt.php" id="regForm" method="post">
 
 
 
@@ -226,29 +232,183 @@
     <label for="manufacturer" class="col-12  col-form-label-lg  pl-xl-5">Do you want to fill additional Product Technical Details?<span> *</span></label>
    
       <div class="form-check col-12">
-        <input class="form-check-input" type="radio" name="chkaddl" id="chkYes" required>
-        <label class="form-check-label mr-5" for="exampleRadios2">
+        <input class="form-check-input" type="radio" name="chkaddl" id="chkYes" value="yes" required>
+        <label class="form-check-label mr-5" for="chkYes">
           Yes
         </label>
-        <input class="form-check-input" type="radio" name="chkaddl" id="chkNo" required >
-        <label class="form-check-label" for="exampleRadios2">
+        <input class="form-check-input" type="radio" name="chkaddl" id="chkNo" value="no" required >
+        <label class="form-check-label" for="chkNo">
           No
         </label>
       </div>
     
   </div>
 
- 
+  <div id="additionaldetails" >
+    <h1 class="mb-5">Additional Product Details</h1>
+    <div class="form-group row">
+      <label for="ratedvolt" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Operational Voltage (Ue)<span> *</span></label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedvolt" title="required field" required>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="duty" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Utilization Category / Duty<span> *</span></label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="duty" title="required field" required>
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="ratedcurrent" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Operational Current (Ie)<span> *</span></label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedcurrent" title="required field" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="supplysystem" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Supply system application </label>
+      <div class="col-12 col-lg-9">
+        <select class="form-control form-control-lg" id="supplysystem">
+          <option>1ph</option>
+          <option>3ph</option>
+         
+        </select>
+      </div>
+     
+    </div>
+    <div class="form-group row">
+      <label for="poles" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">No. of poles </label>
+      <div class="col-12 col-lg-9">
+        <select class="form-control form-control-lg" id="poles">
+          <option>1P</option>
+          <option>1P+N</option>
+          <option>2P</option>
+          <option>3P</option>
+          <option>3P+N</option>
+          <option>4P</option>
+         
+        </select>
+      </div>
+     
+    </div>
+  
+    <div class="form-group row">
+      <label for="breaks" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">No. of breaks per pole</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="breaks" >
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <label for="ratedmaxvolt" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Maximum Operational Voltage (Ue max)</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedmaxvolt" >
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="ratedthermalI" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Thermal Current (Ith)</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedthermalI" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ratedenclosedthermalI" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Enclosed Thermal Current (Ithe)</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedenclosedthermalI" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ratedimpulsevolt" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Impulse Withstand Voltage (Uimp)</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedimpulsevolt" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ratedinsulationvolt" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Insulation Voltage (Ui)</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedinsulationvolt" >
+      </div>
+    </div>
+
+    
+    
+     
+        <div class="form-group d-block d-lg-flex  ">
+          <label for="" class="col-12 col-lg-3  col-form-label-lg  pl-xl-3 mr-5">Suitable for Isolation </label>
+          <div class="col-12 col-lg-9 pt-2 pl-5">
+            <input class="form-check-input" type="radio" name="isolation" id="yes" required>
+            <label class="form-check-label mr-5" for="yes">
+              Yes
+            </label>
+            <input class="form-check-input" type="radio" name="isolation" id="no" required >
+            <label class="form-check-label" for="no">
+              No
+            </label>
+          </div>
+         
+        </div>
+      
+   
+    <div class="form-group row">
+      <label for="operationmode" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Mode of operation </label>
+      <div class="col-12 col-lg-9">
+        <select class="form-control form-control-lg" id="operationmode">
+          <option>Manual</option>
+          <option>Automatic</option>
+         
+        </select>
+      </div>
+     
+    </div>
+    <div class="form-group row">
+      <label for="medium" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Interrupting medium </label>
+      <div class="col-12 col-lg-9">
+        <select class="form-control form-control-lg" id="medium">
+          <option>Air</option>
+          <option>Vacuum</option>
+          <option>Oil</option>
+          <option>Other</option>
+         
+        </select>
+      </div>
+     
+    </div>
+    <div class="form-group row">
+      <label for="ratedsupplyvolt" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Control Supply Voltage (Us)</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ratedsupplyvolt" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="enclosure" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Enclosure details</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="enclosure" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="ipcode" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">IP code</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="ipcode" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="coildetails" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Other coil details </label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="coildetails" >
+      </div>
+    </div>
+
 
 
   </div>
 
 
-  
+  </div>
 
 
-
-  
+ 
 
 
 
@@ -264,7 +424,8 @@
 
 
   
-
+   
+  
 
 
 
@@ -283,6 +444,25 @@
  </div>
  
 
+ 
+
+
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ <script type="text/javascript">
+  $(function () {
+      $("input[name='chkaddl']").click(function () {
+          if ($("#chkYes").is(":checked")) {
+              $("#additionaldetails").show();
+             
+          } else {
+              $("#additionaldetails").hide();
+              $('#ratedvolt').removeAttr('required');
+              $('#duty').removeAttr('required');
+              $('#ratedcurrent').removeAttr('required');
+          }
+      });
+  });
+</script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
