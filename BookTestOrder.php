@@ -103,7 +103,22 @@
   .tab {
     display: none;
   }
+  input.invalid {
+  border: 2px solid red;
+  }
 
+  ::placeholder{
+    color: #85c8cf !important;
+   
+    opacity: 1;
+  }
+  
+  .holder::-webkit-input-placeholder{
+color: red!important;
+  }
+.invalid-select{
+  border:2px solid red;
+}
  
     
   </style>
@@ -150,7 +165,7 @@
   
   <div class="row">
     <div class="container py-3">
-      <form action="testt.php" id="regForm" method="post">
+      <form action="" id="regForm" method="post">
 
 
 
@@ -600,7 +615,8 @@
         function nextPrev(n) {
           // This function will figure out which tab to display
           var x = document.getElementsByClassName("tab");
-         
+          // Exit the function if any field in the current tab is invalid:
+            if (n == 1 && !validateForm()) return false;
           // Hide the current tab:
           x[currentTab].style.display = "none";
           // Increase or decrease the current tab by 1:
@@ -614,6 +630,68 @@
           // Otherwise, display the correct tab:
           showTab(currentTab);
         }
+
+        function validateForm() {
+          // This function deals with validation of the form fields
+          var x, y, i, valid = true;
+          x = document.getElementsByClassName("tab");
+          y = x[currentTab].getElementsByTagName("input");
+         if(currentTab==2){
+           var select=document.getElementById("standard");
+           if(select.value=="dummy"){
+             valid=false;
+             select.classList.add("invalid-select");
+           }
+           else{
+             valid=true;
+           
+           }
+         }
+           if(currentTab==3){
+            var radioButtons = document.getElementsByName("report");
+          for(var i = 0; i < radioButtons.length; i++)
+          {
+              if(radioButtons[i].checked == true)
+              {
+                 valid=true;
+                 break;
+              }
+              else{
+                valid=false;
+              }
+          }
+           }
+           if(currentTab==4){
+             let checkbox=document.getElementById("terms");
+             if(checkbox.checked==true)
+                  valid=true;
+              else
+                  valid=false;
+           }
+          // A loop that checks every input field in the current tab:
+          for (i = 0; i < y.length; i++) {
+            // If a field is empty...
+            if (y[i].value == ""  && y[i].required==true) {
+              console.log(y[i]);
+              // add an "invalid" class to the field:
+              y[i].classList.add("invalid");
+              y[i].placeholder="This field is mandatory";
+              y[i].classList.add("holder");
+              
+      
+              // and set the current valid status to false
+              valid = false;
+            }
+            else{
+              y[i].classList.remove("invalid","holder");
+            }
+          }
+         
+           
+          
+          return valid; // return the valid status
+        }
+        
 
 </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
