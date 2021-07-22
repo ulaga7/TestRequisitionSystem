@@ -435,7 +435,12 @@
         </select>
       </div>
     </div>
-   
+    <div style="display: none;" id="otherstd" class="form-group row">
+      <label for="otherstandard" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Mention It<span> *</span></label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="otherstandard" name="otherstandard"  >
+      </div>
+    </div>
     <div class="form-group row">
       <label for="tests" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Fill required tests</label>
       <div class="col-12 col-lg-9">
@@ -500,6 +505,22 @@
       });
   });
 </script>
+
+<script type="text/javascript">
+  function checkstd(val){
+   var element=document.getElementById('otherstd');
+   var others=document.querySelector('#otherstandard');
+   if(val==''){
+     element.style.display='flex';
+     others.required=true;
+   }
+   else{  
+     element.style.display='none';
+     others.required=false;
+   }
+  }
+  
+  </script> 
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
