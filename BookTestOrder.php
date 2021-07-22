@@ -286,21 +286,21 @@ color: red!important;
     <div class="form-group row">
       <label for="ratedvolt" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Operational Voltage (Ue)<span> *</span></label>
       <div class="col-12 col-lg-9">
-        <input type="text" class="form-control form-control-lg" id="ratedvolt" title="required field" required>
+        <input type="text" class="form-control form-control-lg" id="ratedvolt" title="required field" >
       </div>
     </div>
   
     <div class="form-group row">
       <label for="duty" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Utilization Category / Duty<span> *</span></label>
       <div class="col-12 col-lg-9">
-        <input type="text" class="form-control form-control-lg" id="duty" title="required field" required>
+        <input type="text" class="form-control form-control-lg" id="duty" title="required field">
       </div>
     </div>
   
     <div class="form-group row">
       <label for="ratedcurrent" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Rated Operational Current (Ie)<span> *</span></label>
       <div class="col-12 col-lg-9">
-        <input type="text" class="form-control form-control-lg" id="ratedcurrent" title="required field" required>
+        <input type="text" class="form-control form-control-lg" id="ratedcurrent" title="required field" >
       </div>
     </div>
     <div class="form-group row">
@@ -593,12 +593,14 @@ color: red!important;
       $("input[name='chkaddl']").click(function () {
           if ($("#chkYes").is(":checked")) {
               $("#additionaldetails").show();
-             
+              $("#ratedvolt").attr("required", true);
+              $("#duty").attr("required", true);
+              $("#ratedcurrent").attr("required", true);
           } else {
               $("#additionaldetails").hide();
-              $('#ratedvolt').removeAttr('required');
-              $('#duty').removeAttr('required');
-              $('#ratedcurrent').removeAttr('required');
+              $("#ratedvolt").attr("required", false);
+              $("#duty").attr("required", false);
+              $("#ratedcurrent").attr("required", false);
           }
       });
   });
@@ -668,6 +670,20 @@ color: red!important;
           var x, y, i, valid = true;
           x = document.getElementsByClassName("tab");
           y = x[currentTab].getElementsByTagName("input");
+          if(currentTab==1){
+            var radioButtons = document.getElementsByName("chkaddl");
+          for(var i = 0; i < radioButtons.length; i++)
+          {
+              if(radioButtons[i].checked == true)
+              {
+                 valid=true;
+                 break;
+              }
+              else{
+                valid=false;
+              }
+          }
+           }
          if(currentTab==2){
            var select=document.getElementById("standard");
            if(select.value=="dummy"){
@@ -704,7 +720,7 @@ color: red!important;
           for (i = 0; i < y.length; i++) {
             // If a field is empty...
             if (y[i].value == ""  && y[i].required==true) {
-              console.log(y[i]);
+              
               // add an "invalid" class to the field:
               y[i].classList.add("invalid");
               y[i].placeholder="This field is mandatory";
