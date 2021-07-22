@@ -451,7 +451,36 @@
   
   </div>
  
-
+  <div class="tab">
+    <h1 >Reporting Details</h1>
+    <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
+    <div class="form-group d-block d-lg-flex ml-3 ">
+      <label for="" class="col-12 col-lg-3  col-form-label-lg  pl-0 pl-xl-3 mr-5">Test Report required ?<span> *</span></label>
+      <div class="col-12 col-lg-9 pt-2 pl-5">
+        <input class="form-check-input" type="radio" name="report" id="reportyes" required>
+        <label class="form-check-label mr-5" for="reportyes">
+          Yes
+        </label>
+        <input class="form-check-input" type="radio" name="report" id="reportno" required >
+        <label class="form-check-label" for="reportno">
+          No
+        </label>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="reportcount" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">One Test Report or Separate for each tests </label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="reportcount" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="reportrec" class="col-12 col-lg-3 col-form-label-lg  pl-xl-5">Additional recipient for test report</label>
+      <div class="col-12 col-lg-9">
+        <input type="text" class="form-control form-control-lg" id="reportrec" >
+      </div>
+    </div>
+  
+  </div>
 
 
 
