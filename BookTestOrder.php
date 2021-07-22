@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Test Order</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  
   <style>
       .navs{
         z-index: 10!important;
@@ -144,8 +145,8 @@ color: red!important;
   </style>
 </head>
 <body>
+  <!-- top navbar -->
 <div class="navs">
-
     <div class="top-nav pt-3">
         
         <a  href="home.php"><img src="uploads/logo.png" alt=""></a>   
@@ -181,6 +182,7 @@ color: red!important;
 
 </div>
    
+<!-- remaining body -->
 <div style="padding-top: 155px;" class="px-3 ">
   
   <div class="row">
@@ -188,7 +190,7 @@ color: red!important;
       <form action="" id="regForm" method="post">
 
 
-
+<!-- user details tab -->
   <div class=" tab px-2">
     <h1>User Details</h1>
    <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
@@ -239,7 +241,7 @@ color: red!important;
   </div>
   </div> 
 
-
+<!-- product details tab -->
   <div class=" tab px-2">
     <h1>Product Details</h1>
    <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
@@ -265,6 +267,7 @@ color: red!important;
     </div>
   </div>
 
+  <!-- option to display additional product details -->
   <div class="form-group row addldetails">
     <label for="manufacturer" class="col-12  col-form-label-lg  pl-xl-5">Do you want to fill additional Product Technical Details?<span> *</span></label>
    
@@ -281,6 +284,7 @@ color: red!important;
     
   </div>
 
+  <!-- additional product details -->
   <div id="additionaldetails" >
     <h1 class="mb-5">Additional Product Details</h1>
     <div class="form-group row">
@@ -444,6 +448,7 @@ color: red!important;
 
   </div>
 
+  <!-- other product details tab -->
   <div class="tab">
     <h1 >Other Details</h1>
     <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
@@ -488,6 +493,7 @@ color: red!important;
   
   </div>
  
+  <!-- reporting details tab -->
   <div class="tab">
     <h1 >Reporting Details</h1>
     <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
@@ -519,6 +525,8 @@ color: red!important;
   
   </div>
 
+
+  <!-- terms and conditions tab -->
   <div class="tab">
     <h1 >Terms & Conditions</h1>
     <p >1. All customer information kept confidential unless required by law, regulators or authorized by contractual agreement.</p>
@@ -541,8 +549,7 @@ color: red!important;
   </div>
   
 
-
-
+<!-- previous and next buttons -->
 
   <div class="d-flex justify-content-end">
     <button type="button" id="prevBtn"  class="btn btn-success mr-2" onclick="nextPrev(-1) ">Previous</button>
@@ -551,7 +558,7 @@ color: red!important;
  
 
 
-
+<!-- step indicator  -->
 
     <div style="text-align:center;margin-top:40px;">
     <span class="step"></span>
@@ -564,17 +571,7 @@ color: red!important;
 
 
   
-   
   
-
-
-
-
-  
-
-
-
-
      </form>
       </div>
      
@@ -588,6 +585,8 @@ color: red!important;
 
 
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+ <!-- condition to display additional details -->
  <script type="text/javascript">
   $(function () {
       $("input[name='chkaddl']").click(function () {
@@ -606,6 +605,7 @@ color: red!important;
   });
 </script>
 
+<!-- condition to manually type applicable standard -->
 <script type="text/javascript">
   function checkstd(val){
    var element=document.getElementById('otherstd');
@@ -621,10 +621,13 @@ color: red!important;
   }
   
   </script> 
+
+  <!-- multi tab form validation -->
    <script>
         var currentTab = 0; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
         
+      //condition to show current tab
         function showTab(n) {
           // This function will display the specified tab of the form...
           var x = document.getElementsByClassName("tab");
@@ -646,6 +649,7 @@ color: red!important;
            fixStepIndicator(n)
         }
 
+        // condition to move to next tab
         function nextPrev(n) {
           // This function will figure out which tab to display
           var x = document.getElementsByClassName("tab");
@@ -665,6 +669,8 @@ color: red!important;
           showTab(currentTab);
         }
 
+
+        // validating all the required inputs in the tabs
         function validateForm() {
           // This function deals with validation of the form fields
           var x, y, i, valid = true;
@@ -744,6 +750,8 @@ color: red!important;
           
           return valid; // return the valid status
         }
+
+        // step indicator validation
         function fixStepIndicator(n) {
           // This function removes the "active" class of all steps...
           var i, x = document.getElementsByClassName("step");
