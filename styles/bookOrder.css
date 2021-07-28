@@ -1,0 +1,133 @@
+ .navs{
+        z-index: 10!important;
+      
+          position: fixed;
+          width: 100%;
+         
+      }
+       .top-nav{
+        background: white;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding-left: 4%;
+         padding-right: 4%;
+        
+      }
+      .next-nav{
+         
+          background-color: #008a99;
+          height: 60px;
+      }
+      .nav a{
+         color: white;
+     }
+      .btn-secondary {
+    color: #fff;
+    background-color: #007d99;
+    border-color: #6c757d;
+    font-weight: bolder;
+     }
+      body{
+         
+          color: #009999;
+      }
+     #link-border{
+        border: white 2px solid;border-radius: 10px 0 10px 0;background-color: white;color: #007d99;font-weight: bolder;
+     }
+   .list-group-item {
+    border: none;
+  
+}
+.list-group-item-action {
+
+    color: #009999;
+    text-align: center;
+   
+   
+    
+}
+.list-group-item.active {
+   
+    background-color: #008a99;
+    border-color: #008a99;
+}
+.border {
+    border: 3px solid  #008a99!important;
+    border-radius: 2px;
+}
+
+    .container{
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: 1px solid white;
+      font-weight: bolder;
+
+    }
+    .form-group span{
+      color: red;
+    }
+    .form-control {
+      border: 1.5px solid #009999;
+      
+    }
+    h1{
+      color: #007d99;
+      text-align: center;
+    }
+    .btn{
+     
+      font-weight: bolder;
+
+    }
+
+    ::placeholder{
+    color: #85c8cf !important;
+   
+    opacity: 1;
+  }
+    .addldetails{
+    text-align: center;
+  }
+  #additionaldetails{
+    display: none;
+  }
+  .tab {
+    display: none;
+  }
+  input.invalid {
+  border: 2px solid red;
+  }
+
+  ::placeholder{
+    color: #85c8cf !important;
+   
+    opacity: 1;
+  }
+  
+  .holder::-webkit-input-placeholder{
+color: red!important;
+  }
+.invalid-select{
+  border:2px solid red;
+}
+ 
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #009999;
+  }
