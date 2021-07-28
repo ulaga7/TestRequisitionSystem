@@ -1,0 +1,37 @@
+
+      .navs{
+          position: fixed;
+          width: 100%;
+         
+      }
+       .top-nav{
+         background-color: white;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding-left: 4%;
+         padding-right: 4%;
+        
+      }
+      .next-nav{
+         
+          background-color: #008a99;
+          height: 60px;
+      }
+      .nav a{
+         color: white;
+     }
+      .btn-secondary {
+    color: #fff;
+    background-color: #007d99;
+    border-color: #6c757d;
+    font-weight: bolder;
+     }
+      body{
+         
+          color: #009999;
+      }
+     #link-border{
+        border: white 2px solid;border-radius: 10px 0 10px 0;background-color: white;color: #007d99;font-weight: bolder;
+     }
+    

@@ -6,44 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <style>
-      .navs{
-          position: fixed;
-          width: 100%;
-         
-      }
-       .top-nav{
-         background-color: white;
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         padding-left: 4%;
-         padding-right: 4%;
-        
-      }
-      .next-nav{
-         
-          background-color: #008a99;
-          height: 60px;
-      }
-      .nav a{
-         color: white;
-     }
-      .btn-secondary {
-    color: #fff;
-    background-color: #007d99;
-    border-color: #6c757d;
-    font-weight: bolder;
-     }
-      body{
-         
-          color: #009999;
-      }
-     #link-border{
-        border: white 2px solid;border-radius: 10px 0 10px 0;background-color: white;color: #007d99;font-weight: bolder;
-     }
-    
-  </style>
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
 <div class="navs">
