@@ -51,7 +51,7 @@
   
   <div class="row">
     <div class="container py-3">
-      <form action="" id="regForm" method="post">
+      <form action="submit.php" id="regForm" method="POST">
 
 
 <!-- user details tab -->
@@ -61,7 +61,7 @@
    <div class="form-group row">
     <label for="nameinput" class="col-sm-12 col-lg-3  col-form-label-lg pl-xl-5">Name <span> *</span></label>
     <div class="col-sm-12 col-lg-9">
-      <input type="text" class="form-control form-control-lg" id="nameinput" title="required field"  required>
+      <input type="text" class="form-control form-control-lg" id="nameinput" title="required field" name="usrname" required>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
   <div class="form-group row">
     <label for="emailinput" class="col-sm-12 col-lg-3  col-form-label-lg pl-xl-5">Email<span> *</span></label>
     <div class="col-sm-12 col-lg-9">
-      <input type="email" class="form-control form-control-lg" id="emailinput" title="required field" required>
+      <input type="email" class="form-control form-control-lg" id="emailinput" title="required field" name="email" required>
     </div>
   </div>
   <div class="form-group row">
@@ -106,13 +106,13 @@
   </div> 
 
 <!-- product details tab -->
-  <div class=" tab px-2">
+   <div class=" tab px-2">
     <h1>Product Details</h1>
    <p class="d-flex justify-content-end text-danger">Note: Fields marked by * are mandatory.</p>
    <div class="form-group row">
     <label for="prodname" class="col-sm-12 col-lg-3  col-form-label-lg pl-xl-5">Product Name <span> *</span></label>
     <div class="col-sm-12 col-lg-9">
-      <input type="text" class="form-control form-control-lg" id="prodname" title="required field" required>
+      <input type="text" class="form-control form-control-lg" id="prodname" name="prodname" title="required field" required>
     </div>
   </div>
 

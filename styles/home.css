@@ -1,5 +1,6 @@
 
       .navs{
+           z-index: 10!important;
           position: fixed;
           width: 100%;
          
@@ -35,3 +36,5 @@
         border: white 2px solid;border-radius: 10px 0 10px 0;background-color: white;color: #007d99;font-weight: bolder;
      }
     
+
+   

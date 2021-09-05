@@ -1,3 +1,12 @@
+<?php
+session_start();
+$err="";
+    if(isset($_SESSION["message"]))
+    {
+        $err="submitted successfully";
+        unset($_SESSION["message"]);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +14,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home</title>
+  <title>Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/home.css">
 </head>
-
+<style>
+  .alert {
+    padding:.4rem .4rem!important;
+    }
+</style>
 <body>
   <div class="navs">
 
@@ -49,10 +62,21 @@
 
 
   </div>
+<div style="padding-top: 155px;" class="px-3" >
+<?php if($err): ?>
+<div style="width: 30%;margin: auto;" class="alert alert-success text-center" id="successMessage" role="alert">
+  <?php echo $err; ?>
+</div>
+<?php endif; ?>
 
+<div>
+  
+</div>
+</div>
 
-
-
+<script type="text/javascript">
+  window.setTimeout("document.getElementById('successMessage').style.display='none';", 5000);
+  </script>
 
 
 
