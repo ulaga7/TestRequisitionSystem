@@ -46,7 +46,179 @@
         </li>
       </ul>
     </div>
+    <!-- Nav Bar End -->
 
+    <div class="container">
+      <div class="home-card">
+        <div class="status-bar">
+          <p class="px-1" style="font-weight:bold;color:white;">In Progress</p>
+        </div>
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order No</p>
+          <p class="sec-item">K-20-11-019</p>
+        </div>
+
+        <hr class="bottom-line"> 
+        
+        <div style="margin-top:0px" class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Product</p>
+          <p class="sec-item">AIS</p>
+        </div>
+        
+        <hr class="bottom-line"> 
+        
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test to perform</p>
+          <p class="sec-item">Measurement Of Resistance </p>
+        </div>
+        
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Type of Test</p>
+          <p class="sec-item">Development Test</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order Date</p>
+          <p class="sec-item">11/12/2020 12:00:00 AM</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+      </div>
+
+      <div class="home-card">
+        <div class="status-bar">
+          <p class="px-1" style="font-weight:bold;color:white;">In Progress</p>
+        </div>
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order No</p>
+          <p class="sec-item">K-20-11-019</p>
+        </div>
+
+        <hr class="bottom-line"> 
+        
+        <div style="margin-top:0px" class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Product</p>
+          <p class="sec-item">AIS</p>
+        </div>
+        
+        <hr class="bottom-line"> 
+        
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test to perform</p>
+          <p class="sec-item">Measurement Of Resistance </p>
+        </div>
+        
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Type of Test</p>
+          <p class="sec-item">Development Test</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order Date</p>
+          <p class="sec-item">11/12/2020 12:00:00 AM</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+      </div>
+
+      <div class="home-card">
+        <div class="status-bar">
+          <p class="px-1" style="font-weight:bold;color:white;">In Progress</p>
+        </div>
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order No</p>
+          <p class="sec-item">K-20-11-019</p>
+        </div>
+
+        <hr class="bottom-line"> 
+        
+        <div style="margin-top:0px" class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Product</p>
+          <p class="sec-item">AIS</p>
+        </div>
+        
+        <hr class="bottom-line"> 
+        
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test to perform</p>
+          <p class="sec-item">Measurement Of Resistance </p>
+        </div>
+        
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Type of Test</p>
+          <p class="sec-item">Development Test</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order Date</p>
+          <p class="sec-item">11/12/2020 12:00:00 AM</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+      </div>
+
+      <div class="home-card">
+        <div class="status-bar">
+          <p class="px-1" style="font-weight:bold;color:white;">In Progress</p>
+        </div>
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order No</p>
+          <p class="sec-item">K-20-11-019</p>
+        </div>
+
+        <hr class="bottom-line"> 
+        
+        <div style="margin-top:0px" class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Product</p>
+          <p class="sec-item">AIS</p>
+        </div>
+        
+        <hr class="bottom-line"> 
+        
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test to perform</p>
+          <p class="sec-item">Measurement Of Resistance </p>
+        </div>
+        
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Type of Test</p>
+          <p class="sec-item">Development Test</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+        <div class="record d-flex p-2">
+          <p style="font-weight:bold ; margin-left:4px ">Test Order Date</p>
+          <p class="sec-item">11/12/2020 12:00:00 AM</p>
+        </div>
+
+        <hr class="bottom-line"> 
+
+      </div>
+
+      
+
+
+      
+     
+    </div>
 
   </div>
 
